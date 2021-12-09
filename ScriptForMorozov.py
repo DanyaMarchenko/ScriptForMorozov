@@ -1,9 +1,6 @@
 import telebot
 import time
-import pyautogui
 import argparse
-import sys
-import traceback
 from PIL import ImageGrab
 import datetime
 
