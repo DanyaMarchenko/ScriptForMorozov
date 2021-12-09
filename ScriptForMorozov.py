@@ -4,7 +4,7 @@ import argparse
 from PIL import ImageGrab
 import datetime
 
-parser = argparse.ArgumentParser(description='My program')
+parser = argparse.ArgumentParser(description='Screenshot sender')
 parser.add_argument("-d", "--delay", help="The delay in minutes", type=float)
 parser.add_argument("-i", "--id", help="The id to where the bot will send screenshots", type=str)
 parser.add_argument("-p", "--token", help="The telegram bot token", type=str)
@@ -46,10 +46,10 @@ def start(message):
             secound_screen = secound_get()
 
             bot.send_photo(id, screen, caption="1's screen")
-            print(f"{datetime.datetime.today().strftime('[%H.%M.%S] Sended first screenshot')}")
+            print(f"{datetime.datetime.today().strftime('[%H.%M.%S] The first screenshot has been sent')}")
 
             bot.send_photo(id, screen, caption="2's screen")
-            print(f"{datetime.datetime.today().strftime('[%H.%M.%S] Sended secound screenshot')}")
+            print(f"{datetime.datetime.today().strftime('[%H.%M.%S] The second screenshot has been sent')}")
 
             time_counter = 0
 
