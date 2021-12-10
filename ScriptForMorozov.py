@@ -45,11 +45,11 @@ def start(message):
             first_screen = first_get()
             secound_screen = secound_get()
 
-            bot.send_photo(id, screen, caption="1's screen")
-            print(f"{datetime.datetime.today().strftime('[%H.%M.%S] Sended first screenshot')}")
+            bot.send_photo(id, first_screen, caption="1's screen")
+            print(f"{datetime.datetime.today().strftime('[%H.%M.%S] The first screenshot has been sent')}")
 
-            bot.send_photo(id, screen, caption="2's screen")
-            print(f"{datetime.datetime.today().strftime('[%H.%M.%S] Sended secound screenshot')}")
+            bot.send_photo(id, secound_screen, caption="2's screen")
+            print(f"{datetime.datetime.today().strftime('[%H.%M.%S] The secound screenshot has been sent')}")
 
             time_counter = 0
 
